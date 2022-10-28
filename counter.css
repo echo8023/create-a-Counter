@@ -1,0 +1,86 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --clr-green-1: hsl(125, 67%, 44%);
+  --clr-red-1: hsl(360, 67%, 44%);
+  --clr-black: #222;
+  --clr-pink-10: rgb(241, 245, 248);
+  --clr-white: #fff;
+  --radius: 0.25rem;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* body {
+  background: var(--clr-pink-10);
+} */
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*
+=============== 
+Counter
+===============
+*/
+
+main {
+  background: var(--clr-pink-10);
+  height: 100vh;
+  /* 子div 在 父div中 水平垂直居中 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  /* border: solid blue 1px; */
+  text-align: center; /* 文字居中 */
+}
+h1,
+span {
+  font-size: 8rem;
+  font-weight: bold;
+}
+.btn {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--clr-black);
+  padding: 00.5rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 2rem;
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  margin: 1rem;
+}
+
+.btn:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
